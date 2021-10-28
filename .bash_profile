@@ -2,6 +2,10 @@ source /Users/joseph.dougherty/git-prompt.sh
 
 PS1='[joe! \w$(__git_ps1 " (%s)")]\$ '
 
+
+alias ll='ls -al'
+alias less='less -SR'
+
 #=====================================================================#
 # Start Workflow Functions and Aliases                                #
 #=====================================================================#
@@ -27,8 +31,6 @@ function reset-file-to-master {
 function delete-remote-branch {
     git push origin --delete "$@"
 }
-
-alias ll='ls -al'
 
 alias branch='git branch --show-current'
 
