@@ -32,13 +32,22 @@ function delete-remote-branch {
     git push origin --delete "$@"
 }
 
+function occurrences {
+    while (( "$#" )); do
+        term="$1"
+        count=$(grep -ir "$term" /Users/joseph.dougherty/mongosource/docs | wc -l)
+        echo $term: $count
+    shift
+    done
+}
+
 alias branch='git branch --show-current'
 
 # Backporting aliases
-alias bp5.0='git checkout -b $(branch)-v5.0-backport upstream/v5.0'
-alias bp4.4='git checkout -b $(branch)-v4.4-backport upstream/v4.4'
-alias bp4.2='git checkout -b $(branch)-v4.2-backport upstream/v4.2'
-alias bp4.0='git checkout -b $(branch)-v4.0-backport upstream/v4.0'
+alias bp5.0='git checkout -b $( branch )-v5.0-backport upstream/v5.0'
+alias bp4.4='git checkout -b $( branch )-v4.4-backport upstream/v4.4'
+alias bp4.2='git checkout -b $( branch )-v4.2-backport upstream/v4.2'
+alias bp4.0='git checkout -b $( branch )-v4.0-backport upstream/v4.0'
 
 # Workflow aliases
 alias add-commit='git add . && git commit --amend --no-edit '
