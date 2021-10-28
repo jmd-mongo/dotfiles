@@ -36,7 +36,7 @@ function occurrences {
     while (( "$#" )); do
         term="$1"
         count=$(grep -ir "$term" /Users/joseph.dougherty/mongosource/docs | wc -l)
-        echo $term: $count
+        echo "$term": "$count"
     shift
     done
 }
