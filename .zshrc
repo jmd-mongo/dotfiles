@@ -1,3 +1,10 @@
+alias ll='ls -al'
+alias less='less -SR' # -S turns on horizontal scroll. -R enables color support.
+
+#=====================================================================#
+# Start Workflow Functions and Aliases                                #
+#=====================================================================#
+
 DOCSROOT=/Users/joseph.dougherty/mongosource/docs/source
 
 function cr {
