@@ -43,6 +43,14 @@ function delete-remote-branch {
     git push origin --delete "$@"
 }
 
+function affected-files {
+  term="$1"
+  files=$(grep -irl "$term" $DOCSROOT)
+  count=$(grep -ir "$term" $DOCSROOT | wc -l)
+  echo "$files"
+  echo "Total Occurrences:" "$count"
+}
+
 alias branch='git branch --show-current'
 
 # Backporting aliases
