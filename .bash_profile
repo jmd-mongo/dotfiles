@@ -10,7 +10,8 @@ alias less='less -SR' # -S turns on horizontal scroll. -R enables color support.
 # Start Workflow Functions and Aliases                                #
 #=====================================================================#
 
-DOCSROOT=/Users/joseph.dougherty/mongosource/docs/source
+export DOCSROOT=/Users/joseph.dougherty/mongosource/docs/source
+
 
 function cr {
     if [[ $1 == "" ]]; then
@@ -46,9 +47,9 @@ function delete-remote-branch {
 function affected-files {
   term="$1"
   files=$(grep -irl "$term" $DOCSROOT)
-  count=$(grep -ir "$term" $DOCSROOT | wc -l)
+  count=$(occurrences "$term")
   echo "$files"
-  echo "Total Occurrences:" "$count"
+  echo "$count"
 }
 
 alias branch='git branch --show-current'
