@@ -1,5 +1,5 @@
-Persist Session Using a Terminal Multiplexer
-============================================
+Persist Sessions Using a Terminal Multiplexer
+=============================================
 
 - ``tmux``
 
