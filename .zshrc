@@ -39,11 +39,11 @@ function delete-remote-branch {
 }
 
 function affected-files {
-  term="$1"
-  files=$(grep -irl "$term" $DOCSROOT)
-  count=$(occurrences "$term")
-  echo "$files"
-  echo "$count"
+    term="$1"
+    files=$(grep -irl "$term" $DOCSROOT)
+    count=$(occurrences "$term")
+    echo "$files"
+    echo "$count"
 }
 
 alias branch='git branch --show-current'
