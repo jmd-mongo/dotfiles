@@ -26,7 +26,7 @@ function occurrences {
         term="$1"
         count=$(grep -ir "$term" $DOCSROOT | wc -l)
         echo "$term": "$count"
-    shift
+        shift
     done
 }
 
