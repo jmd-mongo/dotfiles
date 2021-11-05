@@ -67,6 +67,6 @@ Here are some key combinations I find useful when navigating the command line:
 
 - ``option-f``: move forward one word at a time
 
-- ``option-b``: move backwar one word at a time
+- ``option-b``: move backward one word at a time
 
 More info on Motions here: https://ss64.com/osx/syntax-bashkeyboard.html
