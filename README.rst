@@ -29,9 +29,9 @@ and functions to wrangle common workflow tasks:
 Aliases vs. Functions in bash/zsh
 ---------------------------------
 
-*Aliases* serve as a wrapper around an invocation. Aliases do not accept arguments.
+**Aliases** serve as a wrapper around an invocation. Aliases do not accept arguments.
 
-*Functions* can contain more sophisticated logic and can accept arguments.
+**Functions** can contain more sophisticated logic and can accept arguments.
 
 
 Some Aliases I've Defined
@@ -68,3 +68,5 @@ Here are some key combinations I find useful when navigating the command line:
 - ``option-f``: move forward one word at a time
 
 - ``option-b``: move backwar one word at a time
+
+More info on Motions here: https://ss64.com/osx/syntax-bashkeyboard.html
