@@ -20,6 +20,12 @@ I define at least two variables for a given session:
 Persisting the branch name and issue number in the ``tmux`` session is convenient. 
 
 
+.. code:: bash
+
+   $ PARENT=DOCS-XXXXX-documents-a-super-rad-feature
+   $ CRISSUE=XXXXXXXXXX
+
+
 Aliases and Functions 
 =====================
 
