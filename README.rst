@@ -61,6 +61,11 @@ Some Functions I've Defined
 Command Line Motions
 ====================
 
+Use Option as Meta key
+----------------------
+
+https://support.apple.com/guide/terminal/change-profiles-keyboard-preferences-trmlkbrd/2.10/mac/10.15
+
 Here are some key combinations I find useful when navigating the command line:
 
 - ``ctrl-a``: jump to the beginning of the line
@@ -76,3 +81,4 @@ Here are some key combinations I find useful when navigating the command line:
 - ``option-b``: move backward one word at a time
 
 More info on Motions here: https://ss64.com/osx/syntax-bashkeyboard.html
+
